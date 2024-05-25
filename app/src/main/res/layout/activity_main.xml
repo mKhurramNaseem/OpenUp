@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainback"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/toolBar"
+        android:layout_width="26dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="355dp"
+        android:layout_marginRight="381dp"
+        android:layout_marginBottom="@dimen/_23sdp"
+        android:background="@color/white"
+        android:gravity="right"
+        android:orientation="horizontal" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/logoutImg"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/logout">
+
+    </ImageView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainUserRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="124dp" />
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="254dp"
+        android:layout_marginBottom="42dp"
+        android:src="@drawable/camera" />
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="43dp"
+        android:src="@drawable/chat" />
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="42dp"
+        android:src="@drawable/sett" />
+
+
+</RelativeLayout>
